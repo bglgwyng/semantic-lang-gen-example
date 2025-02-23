@@ -252,14 +252,17 @@
         "tree-sitter": "tree-sitter"
       },
       "locked": {
-        "lastModified": 1740294945,
-        "narHash": "sha256-scHh6m97YUm7WIPLQFx6VxJWIJFaVTngDZLBiUlXPoY=",
-        "path": "/home/bglgwyng/Documents/GitHub/semantic-lang-gen",
-        "type": "path"
+        "lastModified": 1740296269,
+        "narHash": "sha256-8bcAH7KWVo8Uj+SEbJ3obh8DOCK6dSFYYvGW5FRadN8=",
+        "owner": "bglgwyng",
+        "repo": "semantic-lang-gen",
+        "rev": "f7ab8ab5a23b5111483710502e008b5fc6b74527",
+        "type": "github"
       },
       "original": {
-        "path": "/home/bglgwyng/Documents/GitHub/semantic-lang-gen",
-        "type": "path"
+        "owner": "bglgwyng",
+        "repo": "semantic-lang-gen",
+        "type": "github"
       }
     },
     "systems": {

@@ -4,7 +4,7 @@
   inputs = {
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
-    semantic-lang-gen.url = "path:/home/bglgwyng/Documents/GitHub/semantic-lang-gen";
+    semantic-lang-gen.url = "github:bglgwyng/semantic-lang-gen";
   };
 
   outputs = inputs@{ flake-parts, ... }:
