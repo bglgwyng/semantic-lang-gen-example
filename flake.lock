@@ -124,11 +124,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1745293081,
-        "narHash": "sha256-HqhzKlL12XyxgH2ZfXYrDXHFMwvPU7Xxip5yxz4I+xA=",
+        "lastModified": 1745423662,
+        "narHash": "sha256-/K1D3KAiqaPwUdMsjhLVnxxSSXW6GQgRrhrhfaw7BwI=",
         "owner": "bglgwyng",
         "repo": "semantic-lang-gen",
-        "rev": "0974c8f0de9738bf32fe68dbe69d4d83822e8ab5",
+        "rev": "816329b05fe42c06d39a1e76e4c3b353613912f5",
         "type": "github"
       },
       "original": {
