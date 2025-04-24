@@ -39,11 +39,11 @@
     "haskell-tree-sitter": {
       "flake": false,
       "locked": {
-        "lastModified": 1745068530,
-        "narHash": "sha256-Q7ckR5qa6p2W3mWISDu6WvSTPcanig1p0vxSkVvJmMA=",
+        "lastModified": 1745474362,
+        "narHash": "sha256-CkEvLKS6DejSJL4iMDKTNQkh9RgzPod6iWeHIavGidM=",
         "ref": "refs/heads/master",
-        "rev": "628fd3c5ee96bf81f13bf0c57eb5e2702b2f6972",
-        "revCount": 2055,
+        "rev": "6c0d9df9953fbd4eaa111310e80e1b0b55346e20",
+        "revCount": 2056,
         "submodules": true,
         "type": "git",
         "url": "ssh://git@github.com/bglgwyng/haskell-tree-sitter"
@@ -124,11 +124,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1745423662,
-        "narHash": "sha256-/K1D3KAiqaPwUdMsjhLVnxxSSXW6GQgRrhrhfaw7BwI=",
+        "lastModified": 1745474505,
+        "narHash": "sha256-hoDlW0SksH9/EaWKJ9G9WuZ4MGKn3zD5031RlVqNUAc=",
         "owner": "bglgwyng",
         "repo": "semantic-lang-gen",
-        "rev": "816329b05fe42c06d39a1e76e4c3b353613912f5",
+        "rev": "e62befe2f81eeac492d16cdb3acc8e0d225a08af",
         "type": "github"
       },
       "original": {
