@@ -4,12 +4,12 @@
 module Main (main) where
 
 import AST.Unmarshal
-import Language.Go.AST
-import TreeSitter.Go
+import Language.Arith.AST
+import TreeSitter.Arith
 
 main :: IO ()
 main = do
-  let source = "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tfmt.Println(\"Hello, World!\")\n}"
+  let source = "x * (y + 1)"
 
-  typedAst <- parseByteString @SourceFile @() tree_sitter_go source
+  typedAst <- parseByteString @SourceFile @() tree_sitter_arith source
   print typedAst

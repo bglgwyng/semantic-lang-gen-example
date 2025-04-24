@@ -92,8 +92,8 @@ executable semantic-lang-gen-example
     -- Other library packages from which modules are imported.
     build-depends:    base
                     , tree-sitter
-                    , tree-sitter-go
-                    , semantic-go
+                    , tree-sitter-arith
+                    , semantic-arith
                     , semantic-mini
                     -- , tree-sitter-example
     -- Directories containing source files.

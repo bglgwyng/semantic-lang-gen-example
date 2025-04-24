@@ -14,8 +14,8 @@
       perSystem = { config, self', inputs', pkgs, system, ... }:
         let
           ghc = "ghc965";
-          lang = "go";
-          Lang = "Go";
+          lang = "arith";
+          Lang = "Arith";
         in
         {
           _module.args.pkgs = import inputs.nixpkgs {
