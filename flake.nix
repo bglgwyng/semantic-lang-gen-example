@@ -13,7 +13,6 @@
       systems = [ "x86_64-linux" "aarch64-linux" "aarch64-darwin" "x86_64-darwin" ];
       perSystem = { config, self', inputs', pkgs, system, ... }:
         let
-          ghc = "ghc965";
           lang = "arith";
           Lang = "Arith";
         in
@@ -21,7 +20,6 @@
           _module.args.pkgs = import inputs.nixpkgs {
             inherit system;
             overlays = [
-              (_: prev: { haskellPackages = prev.haskell.packages."${ghc}"; })
               inputs.semantic-lang-gen.overlay
               (final: prev:
                 let
@@ -68,15 +66,18 @@
           packages."semantic-${lang}" = pkgs.haskellPackages."semantic-${lang}";
 
           # devShells.default = import ./develop.nix { inherit pkgs; };
-          devShells.default = pkgs.mkShell {
+          devShells.default = pkgs.haskellPackages.shellFor {
+            withHoogle = true;
+            packages = hpkgs: [
+              hpkgs.semantic-lang-gen-example
+            ];
             buildInputs =
               with pkgs;
-              haskellPackages.semantic-lang-gen-example.env.nativeBuildInputs
-              ++
               [
                 tree-sitter
                 nodejs_22
-                (haskellPackages.ghcWithPackages (p: with p; [
+                (haskellPackages.ghcWithPackages (hpkgs: with hpkgs; [
+                  cabal-install
                   haskell-language-server
                   ghcid
                 ]))
